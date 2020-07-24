@@ -7,17 +7,17 @@ for (let i = 0; i < cards.length; i++) {
     });
 }
 
-const infoRecipes = document.querySelectorAll('.item_info');
-const hideShow = document.querySelectorAll('a .hide_show');
+const infoRecipes = document.querySelectorAll('.info_container .item_info');
+const hideShow = document.querySelectorAll('.info_container .hide_show');
 
 for (let i = 0; i < hideShow.length; i++){
     hideShow[i].addEventListener('click', () => {
-        if (hideShow[i].innerHTML == 'ESCONDER'){
+        if (hideShow[i].innerHTML == 'Esconder'){
             infoRecipes[i].classList.add('hidden');
-            hideShow[i].innerHTML = "MOSTRAR";
+            hideShow[i].innerHTML = "Mostrar";
         } else {
-            infoRecipes.classList.remove('hidden');
-            hideShow.textContent = "ESCONDER";
+            infoRecipes[i].classList.remove('hidden');
+            hideShow[i].textContent = "Esconder";
         }
     });
 }
