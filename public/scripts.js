@@ -12,12 +12,12 @@ const hideShow = document.querySelectorAll('.info_container .hide_show');
 
 for (let i = 0; i < hideShow.length; i++){
     hideShow[i].addEventListener('click', () => {
-        if (hideShow[i].innerHTML == 'Esconder'){
+        if (hideShow[i].innerHTML == 'ESCONDER'){
             infoRecipes[i].classList.add('hidden');
-            hideShow[i].innerHTML = "Mostrar";
+            hideShow[i].innerHTML = "MOSTRAR";
         } else {
             infoRecipes[i].classList.remove('hidden');
-            hideShow[i].textContent = "Esconder";
+            hideShow[i].textContent = "ESCONDER";
         }
     });
 }
