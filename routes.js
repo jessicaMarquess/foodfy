@@ -20,6 +20,7 @@ routes.get('/recipe/:index', function (req, res) {
     }
     return res.render('recipe', { item })
 });
+
 routes.get("/admin/recipes", recipe.index);
 routes.get("/admin/recipes/create", recipe.create);
 routes.get("/admin/recipes/:index", recipe.show);
