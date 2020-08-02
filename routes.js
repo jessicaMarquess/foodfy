@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = express.Router();
-const recipes = require("./data");
+const recipes = require("./data/data");
 const recipe = require("./controllers/recipes");
 
 routes.get("/", function(req, res){
@@ -28,7 +28,5 @@ routes.get("/admin/recipes/:index/edit", recipe.edit);
 // routes.post("/admin/recipes", recipe.post);
 // routes.put("/admin/recipes", recipe.put);
 // routes.delete("/admin/recipes", recipe.delete);
-routes.use(function (req, res) {
-    res.status(404).render("not-found");
-});
+
 module.exports = routes;

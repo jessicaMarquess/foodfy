@@ -8,6 +8,7 @@
                 type = "url"
                 name = "img_url"
                 placeholder = "http://"
+                value = "{{recipe.avatar_url}}"
             />
         </div>
     </div>
@@ -18,7 +19,8 @@
         <div>
             <input 
                 type = "text"
-                name = "name"
+                name = "title"
+                value = "{{recipe.title}}"
             />
         </div>
     </div>  
@@ -30,6 +32,7 @@
             <input 
                 type = "text"
                 name = "chef"
+                value = "{{recipe.chef}}"
             />
         </div>
     </div>  
@@ -70,8 +73,8 @@
             name="add-info" 
             cols="28" 
             rows="10" 
-            ></textarea>
+            >{{recipe.add-info}}</textarea>
         </div>
     </div>
-    
 </div>
+<script src="/scripts/add-infos.js"></script>
